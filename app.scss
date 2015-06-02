@@ -1,0 +1,12 @@
+/* app.scss */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url(https://download.unsplash.com/photo-1429041966141-44d228a42775);
+}
