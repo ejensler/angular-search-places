@@ -1,0 +1,43 @@
+/* _search_results.scss */
+
+.search-places-results {
+    position: absolute;
+    display: block;
+    background: white;
+    text-align: left;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    border-radius: 5px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding: 0.5em;
+            border-bottom: 1px solid #ccc;
+
+            > div {
+                white-space: nowrap;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        li:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    .result-vicinity {
+        font-size: 0.7em;
+        color: #aaa;
+    }
+
+    // For the *required* "Powered by Google" logo
+    .poweredby-logo {
+        padding: 0.5em;
+        float: right;
+    }
+}
