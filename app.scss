@@ -3,6 +3,8 @@
 $fonts-headings: 'Raleway', sans-serif;
 $fonts-body: 'Source Sans Pro', sans-serif;
 
+$colors-primary: #f93;
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -51,8 +53,8 @@ body {
         display: inline-block;
         padding: 0.5em 1em;
         max-width: 200px;
-        background: #f93;
-        border: 3px solid #f93;
+        background: $colors-primary;
+        border: 3px solid $colors-primary;
         color: white;
         border-radius: 5px;
         text-align: center;
@@ -68,4 +70,4 @@ body {
     }
 }
 
-@import 'search-results';
+@import 'search-results', 'loader';

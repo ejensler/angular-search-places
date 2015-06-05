@@ -58,8 +58,9 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('html', function () {
-  return gulp.src('index.html')
-    .pipe(gulp.dest(BUILD_DEST));
+  return gulp.src('./*.html')
+    .pipe(gulp.dest(BUILD_DEST))
+    .pipe(plugins.livereload(lrServer));
 });
 
 /* ---- Serve + livereload ---- */

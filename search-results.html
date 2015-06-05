@@ -1,0 +1,12 @@
+<div class="search-places-results" ng-show="ngModel">
+	<ul>
+    	<li ng-repeat="result in results" ng-class="{active: isActive($index) }" ng-click="selectResult($index)">
+       		<div>
+          		<span ng-bind-html="result.name | highlightSearchTerms:ngModel"></span>&nbsp;&nbsp;
+            	<span class="result-vicinity">{{ result.vicinity }}</span>
+          </div>
+        </li>
+    </ul>
+	<div ng-show="queryInProgress" class="ball-clip-rotate"><div></div></div>
+	<img class="poweredby-logo" src="//maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white2.png" />
+</div>
