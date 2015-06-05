@@ -70,6 +70,8 @@ angular.module('angularSearchPlaces', [])
 
   function link($scope, $el, $attrs, ngModelCtrl) {
 
+    $scope.queryInProgress = false;
+
     // Set the limit on search results to a reasonable number by default
     var resultsLimit = $scope.$eval($attrs.searchResultsLimit) || 8;
 
@@ -157,6 +159,7 @@ angular.module('angularSearchPlaces', [])
       else if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
         $scope.results = [{name: 'No results. Try different search terms?'}];
       }
+      $scope.$apply();
     }
 
     /**
