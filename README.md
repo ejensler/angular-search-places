@@ -4,7 +4,7 @@
 
 An angular module that searches a city with results from Google Maps PlacesService.
 
-[Live Example](http://codepen.io/anon/pen/oXZrPa)
+[Live Example](http://codepen.io/ejensler/full/ZGegxj)
 
 ### Usage
 
